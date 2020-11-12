@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewBox</title>
+    <link rel="stylesheet" href="2_vb.css" type="text/css">
+</head>
+<body>
+    <div class="square"></div>
+    <p class="about-us">
+        We have built partnerships with small farms around the world to hand-select beans at the peak of 
+        season. We then carefully roast in small batches to maximize their potential.
+    </p>
+    <p class="about-us-2">
+        We have built partnerships with small farms around the world to hand-select beans at the peak of 
+        season. We then carefully roast in small batches to maximize their potential.
+    </p>
+    <div class="panel-normal">
+        <h2>Single-origin</h2>
+        <div class="body">
+            We have built partnerships with small farms 
+            around the world to hand-select beans at the 
+            peak of season. We then carefully roast in 
+            small batches to maximize their potential.
+        </div>
+    </div>
+    <aside class="dark">
+        <div class="panel-normal">
+            <h2>Single-origin</h2>
+            <div class="body">
+                We have built partnerships with small farms 
+                around the world to hand-select beans at the 
+                peak of season. We then carefully roast in 
+                small batches to maximize their potential.
+            </div>
+        </div>
+    </aside>
+    <aside class="dark js-blue">
+        <div class="panel-normal">
+            <h2>Single-origin</h2>
+            <div class="body">
+                We have built partnerships with small farms 
+                around the world to hand-select beans at the 
+                peak of season. We then carefully roast in 
+                small batches to maximize their potential.
+            </div>
+        </div>
+    </aside>
+</body>
+<script type="text/javascript">
+    // 1. before
+    var rootEl = document.documentElement;
+    var styles = getComputedStyle(rootEl);
+    var mainColor = styles.getPropertyValue('--main-bg');
+    // print main bg color value
+    console.log(String(mainColor).trim());
+
+    // 2. internal
+    // set custom value
+    //rootEl.style.setProperty('--main-bg-blue', 'blue');
+    var blueEl = document.querySelector('.js-blue');
+    blueEl.style.setProperty('--main-bg', 'blue');
+    var styles_b = getComputedStyle(blueEl);
+    var mainColor_b = styles_b.getPropertyValue('--main-bg');
+    // print main bg color value
+    console.log(String(mainColor_b).trim());
+
+    // 3. after
+    var rootEl2 = document.documentElement;
+    var styles2 = getComputedStyle(rootEl2);
+    var mainColor2 = styles2.getPropertyValue('--main-bg');
+    // print main bg color value
+    console.log(String(mainColor2).trim());
+</script>
+</html>

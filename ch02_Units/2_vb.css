@@ -1,0 +1,53 @@
+.square{
+    width: 10vmin;
+    height: 10vmin;
+    background-color: #369;
+}
+
+:root{
+    font-size: calc(.5em + 1vw);
+    --main-font: Helvetica, Arial, sans-serif;
+    --brand-color:#369;
+    --main-bg: #fff;
+    --main-color: #000;
+    --main-bg-blue:var(--main-bg);
+}
+body{
+    /*
+    line-height: 1.2em;
+    */
+    line-height: 1.2;
+}
+.about-us, .about-us-2{
+    font-size: 2em;
+}
+p.about-us{
+    font-family: var(--main-font);
+    color: var(--brand-color);
+}
+p.about-us-2{
+    font-family: var(--main-font, sans-serif);
+    color: var(--second-brand-color, blue);
+}
+
+.panel-normal{
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: .5em;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+}
+.panel-normal > h2{
+    margin-top: 0;
+    font-size: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dark{
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
+    --main-bg: #333;
+    --main-color: #fff;
+}

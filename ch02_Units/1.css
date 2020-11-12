@@ -1,0 +1,79 @@
+body{
+    font-size: 16px;
+}
+.padded{
+    font-size: 16px;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+.box{
+    padding: 1em;
+    border-radius: 1em;
+    background-color: lightgray;
+}
+.box-small{
+    font-size: 13px;
+}
+.box-large{
+    font-size: 18px;
+}
+
+.slogan{
+    font-size: 1.2em; /* 19.2px =1.2 * 16px: inherit font-size from body*/
+    padding: 1.2em; /* 23.04px =1.2 * 1.2 * 16px: inherit font-size from current font-size*/
+    background-color: #ccc;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb20{
+    margin-top: 20px;
+}
+
+ul{
+    font-size: .8em;
+}
+ul.ul_normal_em ul{
+    font-size: 1em;
+}
+/* 
+* :root = html
+:root{
+    font-size: 1em;
+}
+*/
+ul.ul_normal_rem{
+    font-size: .8em;
+}
+ul.ul_normal_rem ul{
+    font-size: .8rem;
+}
+@media(min-width:800px){
+    :root{
+        font-size: .875em;
+    }
+}
+@media(min-width:1200px){
+    :root{
+        font-size: 1em;
+    }
+}
+.panel{
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: .5em;
+    border:1px solid #999;
+}
+.panel > h2{
+    margin-top: 0;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.panel.p-larger{
+    font-size: 1.2rem;
+}
+.panel.p-smaller{
+    font-size: .8rem;
+}

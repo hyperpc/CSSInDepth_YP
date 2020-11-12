@@ -1,0 +1,130 @@
+/*Common Start*/
+:root{
+    box-sizing: border-box;
+}
+*,::before, ::after{
+    box-sizing: inherit;
+}
+/*Common End*/
+body{
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+}
+header{
+    /*
+    * vertical-align:middle; display:table-cell;
+    padding: 4em 0;
+    */
+    padding: 1em 1.5em;
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: .5em;
+}
+main{
+    /*bug in IE: IE will render <main> tag as inline element, so we define display:block*/
+    display: block;
+}
+.wrapper{
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+}
+.container{
+    /*
+    * support IE9+
+    display:table; 
+    width: 100%;
+    border-spacing: 1.5em 0;
+    */
+    display: flex; /* support IE 10+*/
+}
+.main{ 
+    /*
+    * support IE9+
+    display: table-cell;
+    */
+    width: 70%;
+    background-color: #fff;
+    border-radius: .5em;
+    padding: 1em 1.5em;
+}
+.sidebar{
+    /*
+   * only set 30% not work, padding will make sidebar in new line
+   * 1 using calc() to get new width;
+   * 2 or set box-sizing to border-box from content-box(default)
+    width: 30%;
+    width: calc(30% -3em);
+    */
+    /*
+    * support IE9+
+    display: table-cell;
+    */
+    /* float: left; */
+    width: 30%;
+    margin-left: 1.5em;
+    padding:1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+    margin-top: 0;
+}
+
+.notice-1,.notice-2,.notice-3,.notice-4{
+    width: 20%;
+    float: left;
+    padding: 0 2%;
+    height: 40px;
+    border: 1px solid #000;
+    margin: 20px 10px;
+}
+.notice-11,.notice-21,.notice-31,.notice-41{
+    width: 20%;
+    float: left;
+    padding: 0 2%;
+    border: 1px solid #000;
+    margin: 50px 10px;
+}
+.notice-1{
+    overflow: visible;
+}
+.notice-2{
+    overflow: hidden;
+}
+.notice-3{
+    overflow: scroll;
+}
+.notice-4{
+    overflow: auto;
+}
+.notice-11{
+}
+.notice-21{
+    min-height: 3em;
+}
+.notice-31{
+    min-height: 3em;
+}
+.notice-41{
+    max-height: 5em;
+}
+
+.button-link{
+    display: block;
+    padding: .5em;
+    color: #fff;
+    background-color: #0090C9;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button-link+.button-link{
+    margin-top: 1.5em;
+}
+.sponsor-link{
+    display: block;
+    color: #0072b0;
+    font-weight: bold;
+    text-decoration: none;
+}
+body *+*{
+    margin-top: 1.5em;
+}
