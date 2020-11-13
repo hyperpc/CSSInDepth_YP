@@ -52,3 +52,27 @@ double container pattern, BFC(block formatting context),
 
 [class*='column-'], clearfix, ::before, ::after,
 container, row, column, gutter, outline
+
+## ch05 Flexbox
+
+flex container, flex item,
+display: flex/inline-flex/inline-block;
+flex (flex-grow, flex-shrink, flex-basis),
+
+flex-content: 
+flex-direction: column/row/column-reverse/row-reverse;
+input:not[type=radio],
+flex-wrap:nowrap/wrap/wrap-reverse;
+flex-flow(flex-direction/flex-wrap);
+justify-content: flex-start/ flex-end/ center/ space-between/ space-around;
+align-items: flex-start/ flex-end/ center/ stretch/ baseline;
+align-content: flex-start/ flex-end/ center/ space-between/ space-around;
+
+flex-item:
+flex (flex-grow, flex-shrink, flex-basis),
+align-self: auto/ flex-start/ flex-end/ center/ stretch/ baseline;
+Order: 0; (default)
+
+> autoprefixer for old browsers.
+> align-items/align-self: center will make content vertical center.
+> Flexbox make column same height.
