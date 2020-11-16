@@ -76,3 +76,14 @@ Order: 0; (default)
 > autoprefixer for old browsers.
 > align-items/align-self: center will make content vertical center.
 > Flexbox make column same height.
+
+## ch06 Grid
+
+grid container, grid items, grid line, grid track, grid cell, grid area,
+fr: fraction unit,
+display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(4, auto);
+grid-template-columns: [left-start] 2fr [left-end right-start] 1fr [right-end];
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 1.5em; grid-column: 1/3; grid-row: span 1;grid-column: left-start/right-end;
+grid-template-areas, grid-area,
+@supports(display: grid){}, justify-content/-items/-self, align-content/-items/-self,

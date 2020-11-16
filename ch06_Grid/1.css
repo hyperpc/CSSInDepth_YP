@@ -1,0 +1,33 @@
+/*Common Start*/
+/*
+:root{
+    box-sizing: border-box;
+}
+*,::before, ::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: #709b90;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body * + *{
+    margin-top: 1.5em;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+*/
+/*Common End*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .5em;
+}
+.grid > *{
+    background-color: darkgray;
+    color: white;
+    padding: 2em;
+    border-radius: .5em;
+}
