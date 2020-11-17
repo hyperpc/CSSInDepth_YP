@@ -87,3 +87,9 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 gap: 1.5em; grid-column: 1/3; grid-row: span 1;grid-column: left-start/right-end;
 grid-template-areas, grid-area,
 @supports(display: grid){}, justify-content/-items/-self, align-content/-items/-self,
+
+## ch07 Position
+
+fixed, relative, absolute,
+content:"\00D7",
+position: sticky;
