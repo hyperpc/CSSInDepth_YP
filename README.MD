@@ -1,5 +1,5 @@
 
-![Cover](img/CSSInDepth_Cover.jpg)
+![Cover](img/CSSInDepth_Cover.jpg)  
 ebook online: https://livebook.manning.com/book/css-in-depth/about-this-book/
 
 ## ch01 basic
@@ -93,3 +93,17 @@ grid-template-areas, grid-area,
 fixed, relative, absolute,
 content:"\00D7",
 position: sticky;
+
+## ch08 Responsive
+
+1. mobile first
+2. media query : @media, and, ","
+3. fluid layout/ liquid layout
+4. responsive image: srcset
+5. viewport: meta
+
+text-shadow, text-transform: uppercase;
+media feature, media type(print/screen), min-width, max-width, orientation: landscape/portrait,
+min-resolution, max-resolution, -webkit-min-device-pixel-ratio,
+container query, element query,
+img: srcset
