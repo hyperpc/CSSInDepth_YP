@@ -107,3 +107,15 @@ media feature, media type(print/screen), min-width, max-width, orientation: land
 min-resolution, max-resolution, -webkit-min-device-pixel-ratio,
 container query, element query,
 img: srcset
+
+## ch09 modular css
+
+> normalize.css
+Block, Modifier(message--error, nav-menu--horizontal), Element(media__title, media__item),
+state class: is-open, is-expanded, is-loading, has-error.
+utility.css
+
+1. OOCSS : Object Orient CSS
+2. SMACSS : extensible modular archive CSS
+3. BEM : Block, Element, Modifier
+4. ITCSS : Invert Triangle CSS
