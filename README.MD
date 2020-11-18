@@ -114,8 +114,49 @@ img: srcset
 Block, Modifier(message--error, nav-menu--horizontal), Element(media__title, media__item),
 state class: is-open, is-expanded, is-loading, has-error.
 utility.css
+main.scss: @import 'button';
 
 1. OOCSS : Object Orient CSS
-2. SMACSS : extensible modular archive CSS
+2. SMACSS : Scalable and Modular Architecture for CSS
 3. BEM : Block, Element, Modifier
 4. ITCSS : Invert Triangle CSS
+
+## ch10 pattern library
+
+CSS first.
+
+style guide generator, KSS(Knyle Style Sheets).
+
+> cd /proj/pattern-lib
+> npm init -y pattern-lib
+> npm install --save-dev kss
+
+package.json, kss-config.json,
+
+```json
+    "scripts":{
+        "build":"kss --config kss-config.json"
+    }
+```
+
+> npm run build
+
+```css
+    /*
+        Media
+
+        Display an image...
+
+        Markup:
+        <div class="media">
+            <img class="media__image" src="...">
+        </div>
+
+        Styleguide Media
+     */
+```
+
+> npm run build
+> section-media.html
+
+Semantic Version
