@@ -173,3 +173,14 @@ background-blend-mode: overlay/ hard-light/ soft-light;
 background-blend-mode: Hue/ saturation/ luminosity/ color;
 background-blend-mode: difference/ exclusion;
 mix-blend-mode: hard-light/...
+
+## ch12 Contrast, Color and Space
+
+variable: --gray:#868e96;  
+BEM : hero__inner;  
+RGB/ RGBA/ HSL/ HSLA;  
+> HSL COLOR PICKER: https://hslpicker.com/  
+> Contrast Ratio: https://contrast-ratio.com/  
+> CONTRAST CHECKER: https://contrastchecker.com/  
+WCAG: AA/ AAA,  
+leading (line-height)
