@@ -37,8 +37,8 @@ elements.style.setProperty('--main-bg', 'blue')
 aside, box-sizing, content-box, border-box,
 float, overflow, display: table, display:table-cell,border-spacing: 1.5em,0;
 Flexbox, display: flex, min-height, max-height, min-width, max-width
-> Don't set height on an element, before you cannot find a solution.
-> Don't set overflow on an element, before you cannot find a solution.
+> Don't set height on an element, before you cannot find a solution.  
+> Don't set overflow on an element, before you cannot find a solution.  
 > margin-left, margin-top less then 0, diff with margin-right, margin-bottom less then 0
 
 margin (top/bottom) folder,
@@ -73,8 +73,8 @@ flex (flex-grow, flex-shrink, flex-basis),
 align-self: auto/ flex-start/ flex-end/ center/ stretch/ baseline;
 Order: 0; (default)
 
-> autoprefixer for old browsers.
-> align-items/align-self: center will make content vertical center.
+> autoprefixer for old browsers.  
+> align-items/align-self: center will make content vertical center.  
 > Flexbox make column same height.
 
 ## ch06 Grid
@@ -127,8 +127,8 @@ CSS first.
 
 style guide generator, KSS(Knyle Style Sheets).
 
-> cd /proj/pattern-lib
-> npm init -y pattern-lib
+> cd /proj/pattern-lib  
+> npm init -y pattern-lib  
 > npm install --save-dev kss
 
 package.json, kss-config.json,
@@ -156,7 +156,20 @@ package.json, kss-config.json,
      */
 ```
 
-> npm run build
+> npm run build  
 > section-media.html
 
-Semantic Version
+SemVer : Semantic Version
+
+## ch11 background, shadow and mixed module
+
+line-gradient(), to right, 90deg, 5rad, 0.25turn, 400grad,
+repeating-linear-gradient(), radial-gradient(), repeating-radial-gradient(),
+color stop,
+box-shadow, text-shadow,
+background-blend-mode: multiply/ darken/ color-burn;
+background-blend-mode: screen/ lighten/ color-dodge;
+background-blend-mode: overlay/ hard-light/ soft-light;
+background-blend-mode: Hue/ saturation/ luminosity/ color;
+background-blend-mode: difference/ exclusion;
+mix-blend-mode: hard-light/...

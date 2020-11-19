@@ -1,0 +1,71 @@
+.main{
+    display: flex;
+}
+.fade{
+    height: 50px;
+    width: 50px;
+
+    margin: 0.5em 0.5em;
+}
+.fade-right{
+    background-image: linear-gradient(to right, white, blue);
+}
+.fade-left{
+    background-image: linear-gradient(to left, white, blue);
+}
+.fade-corner{
+    background-image: linear-gradient(to bottom right, white, blue);
+}
+.fade-deg-90{
+    background-image: linear-gradient(90deg, white, blue);
+}
+.fade-deg-135{
+    background-image: linear-gradient(135deg, white, blue);
+}
+.fade-deg-180{
+    background-image: linear-gradient(180deg, white, blue);
+}
+.fade-dup-color-right{
+    background-image: linear-gradient(to right, red, white, blue);
+}
+.fade-dup-color-deg-135{
+    background-image: linear-gradient(135deg, red, white, blue);
+}
+.fade-dup-color-grad-200{
+    background-image: linear-gradient(200grad, red, white, blue);
+}
+.fade-dup-color-grad-200-percent{
+    background-image: linear-gradient(200grad, red 0%, white 30%, blue 100%);
+}
+.fade-pure-deg-90{
+    background-image: linear-gradient(90deg, red 33%, white 33%, white 66%, blue 66%);
+}
+.fade-repeat-progress{
+    margin-top: 30px;
+    height: 1em;
+    width: 400px;
+    background-image: repeating-linear-gradient(-45deg, #57b, #57b 10px, #148 10px, #148 20px);
+    border-radius: 0.3em;
+}
+.fade-radial{
+    height: 100px;
+    width: 200px;
+}
+.fade-radial-basic{
+    background-image: radial-gradient(white, midnightblue);
+}
+.fade-radial-circle{
+    background-image: radial-gradient(circle, white, midnightblue);
+}
+.fade-radial-position{
+    background-image: radial-gradient(3em at 25% 25%, white, midnightblue);
+}
+.fade-radial-position-percent{
+    background-image: radial-gradient(circle, midnightblue 0%, white 75%, red 100%);
+}
+.fade-radial-repeat-circle{
+    background-image: repeating-radial-gradient(circle, midnightblue 0, midnightblue 1em, white 1em, white 2em);
+}
+.fade-radial-repeat-circle-dup{
+    background-image: repeating-radial-gradient(circle, red, yellow 10%, green 15%);
+}
