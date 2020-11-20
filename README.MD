@@ -184,3 +184,18 @@ RGB/ RGBA/ HSL/ HSLA;
 > CONTRAST CHECKER: https://contrastchecker.com/  
 WCAG: AA/ AAA,  
 leading (line-height)
+
+## ch13 Web Font
+
+Web safe font: Arial, Helvetica, Georgia;
+@font-face;
+Blog: Forum, Open Sans;
+Children: Anton, Pangolin;
+
+Typekit
+Webtype
+google fonts (Sansita, Roboto)
+
+FOUT/ FOIN
+line-height, letter-spacing,
+font-display
