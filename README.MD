@@ -199,3 +199,10 @@ google fonts (Sansita, Roboto)
 FOUT/ FOIN
 line-height, letter-spacing,
 font-display
+
+## ch14 Transition
+
+transition-property, transition-duration, transition-timing-function, transition-delay,  
+linear/ ease/ ease in/ ease out,  
+bezier curve, cubic-bezier, steps() end is default,  
+handles, control points
