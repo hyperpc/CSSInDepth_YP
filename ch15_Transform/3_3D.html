@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform</title>
+    <style type="text/css">
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+        .row-perspective{
+            perspective: 200px;
+        }
+        .row-left-perspective{
+            perspective: 200px;
+            perspective-origin: left bottom;
+        }
+        .box{
+            box-sizing: border-box;
+            width: 150px;
+            margin: 2em 2em;
+            padding: 60px 0;
+            text-align: center;
+            background-color: hsl(150, 50%, 40%);
+        }
+        .box-perspective{
+            transform: perspective(200px) rotateX(30deg);
+        }
+        .row-perspective .box, .row-left-perspective .box{
+            transform: rotateX(30deg);
+        }
+        .row-backface .box:nth-child(2n) {
+            transform: rotateY(180deg);
+        }
+
+        .row-backface .box:nth-child(n + 3) {
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+    <div class="row">
+        <div class="box box-perspective">One</div>
+        <div class="box box-perspective">Two</div>
+        <div class="box box-perspective">Three</div>
+        <div class="box box-perspective">Four</div>
+    </div>
+    <div class="row row-perspective">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+    <div class="row row-left-perspective">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+    <div class="row row-backface">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+</body>
+</html>
