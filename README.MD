@@ -216,3 +216,11 @@ rending: layout/reflow -> paint/layers(hardware acceleration) -> composite
 Recommend to use **transform**, **opacity** to do animation, not recommend **scale** or **transition**! Cause **transform**, **opacity** can take advantage of GPU hardware acceleration.  
 **will-change:transform;** will advance make browser know that element transform will change. but this may take lots of system resource, not recommend.  
 perspective, perspective-origin, backface-visibility:hidden; **transform-style:preserve-3d;(IE not support preserve-3d)**  
+
+## ch16 Animation
+
+keyframe, Flyin-Grid,  
+animation, perspective, animation-delay, animation-fill-mode(none/ backwards/ forwards/ both),
+grid, grid-template-columns, gap, flex-wrap,  
+addEventListener, animationend,  
+CSS Animations on demand: https://animista.net/
